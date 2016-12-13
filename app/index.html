@@ -18,6 +18,10 @@
     {{content-for "body"}}
 
     <script src="{{rootURL}}assets/vendor.js"></script>
+    <script>
+      window.Promise = Ember.RSVP.Promise;
+    </script>
+    <script type="text/javascript" charset="utf-8" src="runtime.js"> </script>
     <script src="{{rootURL}}assets/redux-app.js"></script>
 
     {{content-for "body-footer"}}
