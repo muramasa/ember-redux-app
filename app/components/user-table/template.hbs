@@ -1,0 +1,4 @@
+{{#each users as |user|}}
+  <div>{{user.name}}</div>
+  <button onclick={{action remove user.id}}>remove</button>
+{{/each}}
